@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=1024" name="viewport">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="no-cache" http-equiv="Cache-Control">
+	<title>3-0where</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.css" />
+	<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&"></script>
+	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+</head>
+<body style="background: #ededed;">
+	<div id="loading-mask">
+		<div class="big_logo">
+			<i class="logo-load ip-inner sprite-animate"></i>
+			<i class="animate_copy"></i>
+		</div>
+	</div>
+	<div class="out">
+		<div class="header header_topper">
+			<img src="img/box-top.png" alt="">
+			<div class="header_block">
+				<div class="btn_box">
+					<button class="menu_btn js-menu">
+						<span></span>
+					</button>
+					<span>Весь сайт</span>
+				</div>
+				<div class="phone">
+					<a href="callto:">+7 (495) 921-16-01</a>
+				</div>
+				<div class="logo">
+					<a href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="header header_right">
+			<img src="img/box-right.png" alt="">
+		</div>
+		<div class="header header_bottom">
+			<img src="img/box-bottom.png" alt="">
+			<div class="footer_block">
+				<div class="copyright">
+					<span>©2015, GoldKili</span>
+				</div>
+				<div class="developer">
+					Сделано во <a href="">Флекс Медиа</a>
+				</div>
+				<div class="callback">
+					<a href="/" class="btn_callback"><i class="icon_callback"></i>Обратная связь</a>
+					<a href="" class="where"><i class="icon_where"></i>Где купить</a>
+				</div>
+			</div>
+		</div>
+		<div class="header header_left">
+			<img src="img/box-left.png" alt="">
+		</div>
+		<nav class="nav js-nav">
+			<div class="close_btn js-close-menu"></div>
+			<div class="nav_container">					
+				<div class="nav_in">
+					<ul class="menu">
+						<li><a href="">главная</a></li>
+						<li><a href="">наши продукты</a></li>
+						<li><a href="">рецепты</a></li>
+						<li><a href="">где купить</a></li>
+						<li><a href="">новости</a></li>
+						<li><a href="">о компании</a></li>
+						<li><a href="">контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">		
+			<div class="icon_box">
+				<div>
+					<i class="icon_purse animation" data-fps="6"></i>
+					<i class="icon_money-1"></i>
+					<i class="icon_money-2"></i>
+					<i class="icon_monet-2"></i>
+					<i class="icon_percent"></i>
+					<i class="icon_pin animation" data-fps="15"></i>
+					<i class="icon_arrow-1"></i>
+					<i class="icon_arrow-2"></i>
+					<i class="icon_pack animation" data-fps="10"></i>
+					<i class="icon_monet-1"></i>
+					<i class="icon_money-3"></i>
+					<i class="icon_money-4"></i>
+					<i class="icon_percent-2"></i>
+					<i class="icon_player"></i>
+				</div>
+			</div>
+			<div class="centered">
+				<div class="max-width">
+					<h1>
+						<noindex>
+							<div class="cur_text_t js-curve" data-rad="500">где</div>
+						</noindex>
+						<div class="n_text">
+							<span>где</span>
+						</div>
+						купить
+					</h1>
+				</div>
+			</div>
+			<div class="shops">				
+				<div class="shops_content">
+					<section class="contacts_slide">
+						<address>
+							<span class="holder">
+								<span>Москва и Московская область</span>
+								<i class="ico"></i>
+							</span>
+						</address>
+						<div class="slide">
+							<div class="box">
+								<a href="#">Москва и Московская область</a>
+								<a href="#">Санкт-Петурбург</a>
+								<a href="#">Самара</a>
+								<a href="#">Смоленск</a>
+								<a href="#">Интернет-магазины</a>
+							</div>
+						</div>
+					</section>
+					<div class="shops_map js-shop-map">
+						<div class="shop_map-overflow">
+							<div id="map-canvas-where"></div>
+						</div>
+						<div class="shop_btn">
+							<a href="#" class="js-toggle-points btn_toggle">
+								<span>Все магазины на карте</span>
+								<svg version="1.1" class="btn_shop" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+								xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"
+								height="100%" xml:space="preserve">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+							</svg>
+							</a>
+						</div>
+					</div>
+					<div class="shops_group js-shop-group">
+						<div class="container">
+							<ul class="shops_ul">
+								<li class="shops_item">
+									<div>
+										<div class="shop_title">Магазин «Джаганат»,</div>
+										<div class="tips">
+											<span class="js-tooltip"> ул. Кузнецкий мост, д.11, м. Кузнецкий мост,</span>
+											<div class="tooltip">
+												<i class="close_tooltip"></i>
+												<div class="maps" id="map-1" data-latitude="30.9932470322" data-longitude="52.4624160046"></div>
+											</div>
+										</div>
+										<span class="shop_phone">тел.+7 (495) 625-42-64<br>тел.+7 (495) 625-42-64</span>
+									</div>
+								</li>
+								<li class="shops_item">
+									<div>
+										<div class="shop_title">Магазин «Джаганат»2,</div>
+										<div class="tips">
+											<span class="js-tooltip"> 2ул. Кузнецкий мост, д.11, м. Кузнецкий мост,</span>
+											<div class="tooltip">
+												<i class="close_tooltip"></i>
+												<div class="maps" id="map-2" data-latitude="40.9932470322" data-longitude="52.4624160046"></div>
+											</div>
+										</div>
+										<span class="shop_phone">тел.+7 (495) 625-42-64</span>
+									</div>
+								</li>
+								<li class="shops_item">
+									<div>
+										<div class="shop_title">Магазин «Джаганат»3,</div>
+										<div class="tips">
+											<span class="js-tooltip"> 3ул. Кузнецкий мост, д.11, м. Кузнецкий мост,</span>
+											<div class="tooltip">
+												<i class="close_tooltip"></i>
+												<div class="maps" id="map-3" data-latitude="20.9932470322" data-longitude="52.4624160046"></div>
+											</div>
+										</div>
+										<span class="shop_phone">тел.+7 (495) 625-42-64</span>
+									</div>
+								</li>
+								<li class="shops_item">
+									<div>
+										<div class="shop_title">Магазин «Джаганат»4,</div>
+										<div class="tips">
+											<span class="js-tooltip"> 4ул. Кузнецкий мост, д.11, м. Кузнецкий мост,</span>
+											<div class="tooltip">
+												<i class="close_tooltip"></i>
+												<div class="maps" id="map-4" data-latitude="10.9932470322" data-longitude="52.4624160046"></div>
+											</div>
+										</div>
+										<span class="shop_phone">тел.+7 (495) 625-42-64</span>
+									</div>
+								</li>
+								<li class="shops_item">
+									<div>
+										<div class="shop_title">Магазин «Джаганат»5,</div>
+										<div class="tips">
+											<span class="js-tooltip"> 5ул. Кузнецкий мост, д.11, м. Кузнецкий мост,</span>
+											<div class="tooltip">
+												<i class="close_tooltip"></i>
+												<div class="maps" id="map-5" data-latitude="9.9932470322" data-longitude="52.4624160046"></div>
+											</div>
+										</div>
+										<span class="shop_phone">тел.+7 (495) 625-42-64</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/jquery.stellar.min.js"></script>
+<script src="js/lib/jquery.arctext.js"></script>
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/lib/jquery.animateSprite.min.js"></script>
+<script src="js/lib/TweenMax.min.js"></script>
+<script src="js/lib/ScrollMagic.min.js"></script>
+<script src="js/lib/animation.gsap.min.js"></script>
+<script src="js/lib/debug.addIndicators.min.js"></script>
+<script src="js/lib/map.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+.logo-load.sprite-animate {
+	-webkit-animation-name: sprite-logo-large;
+	-webkit-animation-duration: 3500ms;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: steps(146, end);
+	-webkit-animation-fill-mode: none;
+	-webkit-animation-direction: normal;
+	-webkit-animation-play-state: running;
+	-webkit-animation-delay: 0s;
+
+	-moz-animation-name: sprite-logo-large;
+	-moz-animation-duration: 3500ms;
+	-moz-animation-iteration-count: none;
+	-moz-animation-timing-function: steps(146, end);
+	-moz-animation-fill-mode: none;
+	-moz-animation-direction: normal;
+	-moz-animation-play-state: running;
+	-moz-animation-delay: 0s;
+
+	-o-animation-name: sprite-logo-large;
+	-o-animation-duration: 3500ms;
+	-o-animation-iteration-count: none;
+	-o-animation-timing-function: steps(146, end);
+	-o-animation-fill-mode: none;
+	-o-animation-direction: normal;
+	-o-animation-play-state: running;
+	-o-animation-delay: 0s;
+
+	animation-name: sprite-logo-large;
+	animation-duration: 3500ms;
+	animation-iteration-count: none;
+	animation-timing-function: steps(146, end);
+	animation-fill-mode: none;
+	animation-direction: normal;
+	animation-play-state: running;
+	animation-delay: 0s;
+}
+@-webkit-keyframes sprite-logo-large {
+	0% {
+		background-position: 0 center;
+	}
+	100% {
+		background-position: -30076px center;
+	}
+}
+@-moz-keyframes sprite-logo-large {
+	0% {
+		background-position: 0 center;
+	}
+	100% {
+		background-position: -30076px center;
+	}
+}
+@-o-keyframes sprite-logo-large {
+	0% {
+		background-position: 0 center;
+	}
+	100% {
+		background-position: -30076px center;
+	}
+}
+@keyframes sprite-logo-large {
+	0% {
+		background-position: 0 center;
+	}
+	100% {
+		background-position: -30076px center;
+	}
+}
