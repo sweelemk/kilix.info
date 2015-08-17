@@ -2969,6 +2969,14 @@ hr {
 	top: 30px;
 	left: 163px;
 }
+.icon_sun-2 {
+	width: 123px;
+	height: 120px;
+	background: url(../img/sun.png) no-repeat;
+	position: absolute;
+	top: -130px;
+	left: 163px;
+}
 .icon_letter {
 	width: 112px;
 	height: 97px;

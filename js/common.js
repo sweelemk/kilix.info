@@ -40,14 +40,15 @@ $(document).ready(function () {
 		
 
 		$('#quote').each(function(){
-			var tempScroll = $(this).height() + newScroll;
+			var tempScroll = $(this).height() - newScroll;
 			if(tempScroll < 0) tempScroll = 0;
 			var tempOpacity = 1 - (newScroll / ($(window).height()));
 
-			//$header.css('top', tempScroll);
-			//$('#slider-bg').css('top', tempScroll);
-			//$('#icons-bottom').css('bottom', - tempScroll);
-			$('.fixed_box').css('opacity',tempOpacity);
+			if($(document).scrollTop() >= $(window).height()){
+				$('.fixed_box').css('opacity',0);
+			} else {
+				$('.fixed_box').css('opacity',1);
+			}
 		});
 	};
 
