@@ -321,7 +321,8 @@ function setMarkers(map) {
     for (var i = 0; i < beaches.length; i++) {
         var beach = beaches[i];
 
-        var content = '<div class="tip_containet">' + '<div class="tip_title">' + beach[2] + '</div>' + '<div class="tip_address">' + beach[3] + '</div>' + '<div class="tip_phone">' + beach[4] + '</div>' + '</div>';
+        //var content = '<div class="tip_containet">' + '<div class="tip_title">' + beach[2] + '</div>' + '<div class="tip_address">' + beach[3] + '</div>' + '<div class="tip_phone">' + beach[4] + '</div>' + '</div>';
+        //var content = beach[3]
         console.log(content);
         var markerPosition = new google.maps.LatLng(beach[0], beach[1]);
         markersBounds.extend(markerPosition);
@@ -330,10 +331,12 @@ function setMarkers(map) {
           map: map,
           icon: image,
           //info: beach[2]
+          info: '<div class="tip_containet">' + '<div class="tip_title">' + beach[2] + '</div>' + '<div class="tip_address">' + beach[3] + '</div>' + '<div class="tip_phone">' + beach[4] + '</div>' + '</div>'
         });
         (function(marker, i) {
             google.maps.event.addListener(marker, 'click', function() {
-                infowindow.setContent(content);
+                //infowindow.setContent(content);
+                infowindow.setContent(this.info)
                 infowindow.open(map, marker);
             });
         })(marker, i);
