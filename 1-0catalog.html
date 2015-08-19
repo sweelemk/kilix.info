@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=1024" name="viewport">
+	<meta content="no-cache" http-equiv="pragma">
+	<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="no-cache" http-equiv="Cache-Control">
+	<title>1-0catalog</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/screen.css">
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/jquery.fancybox.css" />
+	<script src="https://maps.googleapis.com/maps/api/js?signed_in=true&"></script>
+	<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+	<noscript>
+			<style>
+				.st-accordion ul li{
+					height:auto;
+				}
+				.st-accordion ul li > a span{
+					visibility:hidden;
+				}
+			</style>
+		</noscript>
+</head>
+<body style="background: #f0f0f0;">
+	<div id="loading-mask">
+		<div class="big_logo">
+			<i class="logo-load ip-inner sprite-animate"></i>
+			<i class="animate_copy"></i>
+		</div>
+	</div>
+	<div class="out">
+		<div class="header header_topper">
+			<img src="img/box-top.png" alt="">
+			<div class="header_block">
+				<div class="btn_box">
+					<button class="menu_btn js-menu">
+						<span></span>
+					</button>
+					<span>Весь сайт</span>
+				</div>
+				<div class="phone">
+					<a href="callto:">+7 (495) 921-16-01</a>
+				</div>
+				<div class="logo">
+					<a href=""></a>
+				</div>
+			</div>
+		</div>
+		<div class="header header_right">
+			<img src="img/box-right.png" alt="">
+		</div>
+		<div class="header header_bottom">
+			<img src="img/box-bottom.png" alt="">
+			<div class="footer_block">
+				<div class="copyright">
+					<span>©2015, GoldKili</span>
+				</div>
+				<div class="developer">
+					Сделано во <a href="">Флекс Медиа</a>
+				</div>
+				<div class="callback">
+					<a data-href="callback" class="btn_callback js-popup-link"><i class="icon_callback"></i>Обратная связь</a>
+					<a href="" class="where"><i class="icon_where"></i>Где купить</a>
+				</div>
+			</div>
+		</div>
+		<div class="header header_left">
+			<img src="img/box-left.png" alt="">
+		</div>
+		<nav class="nav js-nav">
+			<div class="close_btn js-close-menu"></div>
+			<div class="nav_container">					
+				<div class="nav_in">
+					<ul class="menu">
+						<li><a href="">главная</a></li>
+						<li><a href="">наши продукты</a></li>
+						<li><a href="">рецепты</a></li>
+						<li><a href="">где купить</a></li>
+						<li><a href="">новости</a></li>
+						<li><a href="">о компании</a></li>
+						<li><a href="">контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="centered">
+				<div class="wrapper">
+					<div id="st-accordion" class="st-accordion">
+						<ul>
+							<li>
+								<a href="#" class="js-init">
+									<noindex>
+										<div class="cur_text_t js-curve" data-rad="200">напитки</div>
+									</noindex>
+									<div class="n_text">
+										<span>напитки</span>
+									</div>
+									быстрорастворимые
+								</a>
+								<div class="st-content">
+									<div class="st-contnent-title">
+										<noindex>
+											<div class="cur_text_t js-curve-inn" data-rad="900">быстрорастворимый имбирный</div>
+											<div class="cur_text_b js-curve-inn" data-rad="900">напиток с мёдом</div>
+										</noindex>
+										<div class="n_text">
+											быстрорастворимый имбирный напиток с мёдом
+										</div>
+									</div>
+									<div class="st_items">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+									<div class="st_items st_items-last">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="js-init">
+									<noindex>
+										<div class="cur_text_t js-curve" data-rad="200">напитки</div>
+									</noindex>
+									<div class="n_text">
+										<span>напитки</span>
+									</div>
+									пакетированые
+								</a>
+								<div class="st-content">
+									<div class="st-contnent-title">
+										<noindex>
+											<div class="cur_text_t js-curve-inn" data-rad="900">быстрорастворимый имбирный</div>
+											<div class="cur_text_b js-curve-inn" data-rad="900">напиток с мёдом</div>
+										</noindex>
+										<div class="n_text">
+											быстрорастворимый имбирный напиток с мёдом
+										</div>
+									</div>
+									<div class="st_items">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+									<div class="st_items st_items-last">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="js-init">
+									<noindex>
+										<div class="cur_text_t js-curve" data-rad="200">бодрящий</div>
+									</noindex>
+									<div class="n_text">
+										<span>бодрящий</span>
+									</div>
+									натуральный кофе
+								</a>
+								<div class="st-content">
+									<div class="st-contnent-title">
+										<noindex>
+											<div class="cur_text_t js-curve-inn" data-rad="900">быстрорастворимый имбирный</div>
+											<div class="cur_text_b js-curve-inn" data-rad="900">напиток с мёдом</div>
+										</noindex>
+										<div class="n_text">
+											быстрорастворимый имбирный напиток с мёдом
+										</div>
+									</div>
+									<div class="st_items">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+									<div class="st_items">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+									<div class="st_items">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+									<div class="st_items st_items-last">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="js-init">
+									<noindex>
+										<div class="cur_text_t js-curve" data-rad="200">вкусные</div>
+									</noindex>
+									<div class="n_text">
+										<span>вкусные</span>
+									</div>
+									имбирные конфеты
+								</a>
+								<div class="st-content">
+									<div class="st-contnent-title">
+										<noindex>
+											<div class="cur_text_t js-curve-inn" data-rad="900">быстрорастворимый имбирный</div>
+											<div class="cur_text_b js-curve-inn" data-rad="900">напиток с мёдом</div>
+										</noindex>
+										<div class="n_text">
+											быстрорастворимый имбирный напиток с мёдом
+										</div>
+									</div>
+									<div class="st_items">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+									<div class="st_items">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+									<div class="st_items st_items-last">
+										<div>
+											<div class="col2 col_center">
+												<div class="item_img">
+													<img alt="" src="img/ginger.jpg">
+												</div>
+											</div>
+											<div class="col2 col_width">
+												<p>Жгучий эликсир молодости. Замедляет преждевременное старение. Дает удивительную энергию, укрепляет жизненные силы, улучшает пищеварение, обмен веществ. Улучшает сексуальное здоровье у мужчин и женщин. Регулярно пьющие напиток, имеют здоровый цвет лица и блестящие волосы.</p>
+												<blockquote>Напиток можно добавлять в чай, молоко, кефир, соки, подавать со льдом… Он легко откликнется на любую вашу фантазию!</blockquote>
+												<p>Состав: имбирь, мед.</p>
+											</div>
+										</div>
+										<a data-href="want" class="btn_red js-popup-link">
+											<span>Хочу попробовать!</span>
+											<svg version="1.1" class="btn_svg" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%"	height="100%" xml:space="preserve">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.007,23.587c0,0-6.455-19.506,13.314-22.794 C34.09-2.496,61.837,5.509,77.757,5.509c15.92,0,63.669-2.977,82.985-4.144c19.316-1.167,9.842-0.888,24.189,0 c14.348,0.887,34.94,3.166,32.593,20.136c-2.347,16.97-2.649,22.717-5.999,26.997c-3.35,4.28-7.887,14.998-31.293,11.817 c-23.406-3.181-9.764-1.776-31.371-3.716c-21.607-1.941-99.342-1.342-109.297,0c-9.955,1.342-23.646,6.933-29.942,1.572 C1.975,52.873,1.85,25.998,1.007,23.587z"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--popups-->
+	<div class="overlay js-overlay"></div>
+	<div class="popup_wrap js-popup" data-popup="callback">
+		<div class="popup">
+			<div class="popup-form">
+				<div class="form">
+					<div class="form-in js-form">
+						<div id="popup_callback" class="form-front">
+							<div class="popup__title">Мы с вами свяжемся</div>
+							<form action="" class="js-validate">
+								<label class="field">
+									<span class="field_title">Ваше имя:</span>
+									<span class="field_body">
+										<input type="text" class="input" data-validation="required">
+									</span>
+								</label>
+								<label class="field">
+									<span class="field_title">Телефон:</span>
+									<span class="field_body">
+										<input type="text" class="input" data-validation-regexp="^[-0-9()+ ]+$" data-validation="custom">
+									</span>
+								</label>
+								<label class="field">
+									<span class="field_title">Email:</span>
+									<span class="field_body">
+										<input type="text" class="input" data-validation="email">
+									</span>
+								</label>
+								<label class="field field_textarea">
+									<span class="field_title">Сообщение:</span>
+									<span class="field_body">
+										<div class="bg_textarea">
+											<textarea class="txt_space" row="2"></textarea>
+										</div>
+									</span>
+								</label>
+								<label class="field field_btn">
+									<span class="field_body">
+										<button class="btn js-submit" type="submit">
+											<span>Отправить</span>
+											<svg version="1.1" class="btn_submit" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+													<path stroke-width="3" fill-rule="evenodd" clip-rule="evenodd" d="m3.11637,25.2745c0,0 -6.455,-19.506 13.314,-22.794c19.769,-3.289 47.516,4.716 63.436,4.716c15.92,0 63.66899,-2.977 82.985,-4.144c19.31598,-1.167 9.842,-0.888 24.189,0c14.34801,0.887 34.94,3.166 32.593,20.136c-2.347,16.97 -2.649,22.717 -5.99901,26.997c-3.34999,4.28 -7.88699,14.998 -31.293,11.817c-23.40599,-3.181 -9.76399,-1.776 -31.371,-3.716c-21.60699,-1.941 -99.34199,-1.342 -109.29698,0c-9.955,1.342 -23.646,6.93301 -29.942,1.572c-7.64701,-5.298 -7.77201,-32.173 -8.61501,-34.584z"/>
+											</svg>
+										</button>
+									</span>
+								</label>
+							</form>
+						</div>
+						<div class="form-back">
+							<div id="popup_success">
+								<div class="popup__title">Спасибо!</div>
+								<p>Наш менеджер свяжется с вами в ближайшее время!</p>
+								<i class="icon_snail"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>		
+		<div class="close_btn js-close"></div>	
+	</div>
+	<div class="popup_wrap js-popup" data-popup="want">
+		<div class="popup">
+			<div class="popup-form">
+				<div class="form">
+					<div class="form-in js-form">
+						<div id="popup_callback" class="form-front">
+							<div class="popup__title">Хочешь попробовать?</div>
+							<form action="" class="js-validate">
+								<label class="field">
+									<span class="field_title">Ваше имя:</span>
+									<span class="field_body">
+										<input type="text" class="input" data-validation="required">
+									</span>
+								</label>
+								<label class="field">
+									<span class="field_title">Телефон:</span>
+									<span class="field_body">
+										<input type="text" class="input" data-validation-regexp="^[-0-9()+ ]+$" data-validation="custom">
+									</span>
+								</label>
+								<label class="field">
+									<span class="field_title">Email:</span>
+									<span class="field_body">
+										<input type="text" class="input" data-validation="email">
+									</span>
+								</label>
+								<label class="field field_textarea">
+									<span class="field_title">Сообщение:</span>
+									<span class="field_body">
+										<div class="bg_textarea">
+											<textarea class="txt_space" row="2"></textarea>
+										</div>
+									</span>
+								</label>
+								<label class="field field_btn">
+									<span class="field_body">
+										<button class="btn js-submit" type="submit">
+											<span>Отправить</span>
+											<svg version="1.1" class="btn_submit" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+												xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" xml:space="preserve">
+													<path stroke-width="3" fill-rule="evenodd" clip-rule="evenodd" d="m3.11637,25.2745c0,0 -6.455,-19.506 13.314,-22.794c19.769,-3.289 47.516,4.716 63.436,4.716c15.92,0 63.66899,-2.977 82.985,-4.144c19.31598,-1.167 9.842,-0.888 24.189,0c14.34801,0.887 34.94,3.166 32.593,20.136c-2.347,16.97 -2.649,22.717 -5.99901,26.997c-3.34999,4.28 -7.88699,14.998 -31.293,11.817c-23.40599,-3.181 -9.76399,-1.776 -31.371,-3.716c-21.60699,-1.941 -99.34199,-1.342 -109.29698,0c-9.955,1.342 -23.646,6.93301 -29.942,1.572c-7.64701,-5.298 -7.77201,-32.173 -8.61501,-34.584z"/>
+											</svg>
+										</button>
+									</span>
+								</label>
+							</form>
+						</div>
+						<div class="form-back">
+							<div id="popup_success">
+								<div class="popup__title">Спасибо!</div>
+								<p>Наш менеджер свяжется с вами в ближайшее время!</p>
+								<i class="icon_snail"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>		
+		<div class="close_btn js-close"></div>	
+	</div>
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/jquery.stellar.min.js"></script>
+<script src="js/lib/jquery.arctext.js"></script>
+<script src="js/lib/jquery.fancybox.js"></script>
+<script src="js/lib/jquery.animateSprite.min.js"></script>
+<script src="js/lib/TweenMax.min.js"></script>
+<script src="js/lib/ScrollMagic.min.js"></script>
+<script src="js/lib/animation.gsap.min.js"></script>
+<script src="js/lib/debug.addIndicators.min.js"></script>
+<script src="js/lib/map.js"></script>
+<script src="js/lib/jquery.accordion.js"></script>
+<script src="js/lib/jquery.easing.1.3.js"></script>
+<script src="js/lib/jquery.form-validator.min.js"></script>
+<script src="js/lib/autosize.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

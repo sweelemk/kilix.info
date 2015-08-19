@@ -331,13 +331,15 @@ function setMarkers(map) {
           map: map,
           icon: image,
           //info: beach[2]
-          info: '<div class="tip_containet">' + '<div class="tip_title">' + beach[2] + '</div>' + '<div class="tip_address">' + beach[3] + '</div>' + '<div class="tip_phone">' + beach[4] + '</div>' + '</div>'
+          info: '<div id="gm_content" class="tip_containet">' + '<div class="tip_title">' + beach[2] + '</div>' + '<div class="tip_address">' + beach[3] + '</div>' + '<div class="tip_phone">' + beach[4] + '</div>' + '</div>'
         });
         (function(marker, i) {
             google.maps.event.addListener(marker, 'click', function() {
                 //infowindow.setContent(content);
                 infowindow.setContent(this.info)
                 infowindow.open(map, marker);
+                var el = document.getElementById('gm_content').parentNode.parentNode.parentNode.parentNode;
+                el.lastChild.setAttribute('class','closeInfoWindow');
             });
         })(marker, i);
     }
